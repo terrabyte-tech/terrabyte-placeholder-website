@@ -26,11 +26,19 @@
   <!--------->
   <!-- css -->
   <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
   <!-- stylesheets -->
   <!-- shared -->
   <link rel="stylesheet" href="https://terrabyte.eco/css/layout-styles.css">
-  <link rel="stylesheet" href="https://terrabyte.eco/css/shared-styles.css">
+  <link rel="stylesheet" href="https://terrabyte.eco/css/site-styles.css">
+  <link rel="stylesheet" href="https://terrabyte.eco/css/header-styles.css">
+  <link rel="stylesheet" href="https://terrabyte.eco/css/footer-styles.css">
+
+  <!-- placeholder styles, can delete after filling in with site content -->
+  <link rel="stylesheet" href="./css/placeholder-styles.css">
 
   <!-- site -->
   <link rel="stylesheet" href="./css/site-styles.css">
@@ -47,15 +55,221 @@
 
 </head>
 <body>
-  <!-- content here -->
+  <header class="padded-section">
+    <div class="max-width flex-container align-center">
+      <div class="banner-image-container flex-width flex-container align-center">
+        <div id="banner-image" class="set-width flex-container align-center">
+          <svg viewBox="0 0 850 100">
+            <use href="#logo"/>
+          </svg>
+        </div>
+      </div>
+      <div class="nav-container set-width flex-container align-center">
+        <div class="hamburger-menu-icon clickable" data-nav-toggle>
+          <svg viewBox="0 0 50 50">
+            <use href="#hamburger-menu-icon"/>
+          </svg>
+        </div>
+        <nav data-nav class="flex-container align-center">
+          <a class="nav-item-container" href="https://terrabyte.eco">
+            <span>Home</span>
+          </a>
+          <a class="nav-item-container" href="https://terrabyte.eco#projects">
+            <span>Projects</span>
+          </a>
+          <a class="nav-item-container" href="https://terrabyte.eco/about-us">
+            <span>About Us</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-  <!-- terrabyte logo -->
+
+  <section class="padded-section">
+    <div class="max-width">
+      <div class="section-content">
+        <h1>
+          <span class="highlight-container">We're not ready yet</span>
+        </h1>
+        <p>Looks like you found a site that isn't quite ready to go. Come back in <span>optionalEstimatedCompletion</span> &mdash; we should have some more things ready by then.</p>
+      </div>
+    </div>
+  </section>
   
-  <p>Under Construction</p>
+  
 
-  <p>Come back in <span>estimatedCompletion</span>, we should have some more things ready by then.</p>
+  <a id="footer-anchor" name="footer"></a>
+  <footer data-footer>
 
-  <!-- footer? -->
-  <!-- link to terrabyte website -->
+    <div id="true-footer" class="padded-section">
+      <div class="footer-top-container max-width flex-container">
+        <div id="footer-logo-container" class="flex-width flex-container align-center">
+          <div id="footer-logo" class="set-width flex-container align-center">
+            <svg viewBox="0 0 850 100">
+              <use href="#logo"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div id="footer-socials-container" class="set-width flex-container">
+          <!-- instagram -->
+          <a class="footer-social icon-container" href="https://instagram.com/terrabyte_tech" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#instagram-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- twitter -->
+          <a class="footer-social icon-container" href="https://twitter.com/terrabyte_tech" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#twitter-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- https://www.youtube.com/channel/UCyOoLyf8iXNEvGGdampKeLQ -->
+          <!-- youtube -->
+          <a class="footer-social icon-container" href="https://www.youtube.com/channel/UCyOoLyf8iXNEvGGdampKeLQ" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#youtube-icon"/>
+              </svg>
+            </div>
+          </a>
+          <!-- we dont have time -->
+          <!-- <a class="footer-item-container icon-container" href="https://wedonthavetime.org" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#wdht-icon"/>
+              </svg>
+            </div>
+          </a> -->
+          <!-- dot.eco profile -->
+          <a class="footer-social icon-container" href="https://profiles.eco/terrabyte" target="_blank">
+            <div class="icon">
+              <svg viewBox="0 0 50 50">
+                <use href="#eco-profile-icon"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer-cols-container max-width flex-container">
+        <div class="footer-left-cols flex-container flex-width">
+          <div class="footer-info-col set-width">
+            <h3>Legal</h3>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/legal/privacy-policy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/legal/cookie-policy.html">Cookie Policy</a>
+            </div>
+          </div>
+          <div class="footer-info-col set-width">
+            <h3>Company</h3>
+            <!-- <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/about-us">About Us</a>
+            </div> -->
+            <!-- <div class="footer-link-container">
+              <a class="standard-link" href="https://blog.terrabyte.eco">Blog</a>
+            </div> -->
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/index.html#faqs">FAQ<span class="force-small-text">s</span></a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/get-involved">Get Involved</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/donate">Donate</a>
+            </div>
+            
+
+            <!-- <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/our-work">Our Work</a>
+            </div> -->
+            <!-- <div class="footer-link-container">
+              <a class="standard-link" href="https://terrabyte.eco/our-impact">Our Impact</a>
+            </div> -->
+            
+          </div>
+          <div class="footer-info-col set-width">
+            <h3>Projects</h3>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://www.pixelplanettoday.com" target="_blank">Pixel Planet Today</a>
+            </div>
+            <div class="footer-link-container">
+              <a class="standard-link" href="https://www.pinekeepers.com" target="_blank">Pinekeepers</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-right-col flex-width">
+          <!-- newsletter -->
+          <h3>Sign up for the newsletter, <span class="little-bytes-text">&lt;little-bytes&gt;</span></h3>
+
+          <form
+  action="https://buttondown.email/api/emails/embed-subscribe/terrabyte"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/terrabyte', 'popupwindow')"
+  class="embeddable-buttondown-form">
+    <!-- <label for="bd-email">Enter your email</label> -->
+    <div class="footer-form-rows flex-container">
+      <div id="email-row" class="form-row set-width flex-container">
+        <span class="custom-input-container flex-width">
+          <input type="email" name="email" id="bd-email" placeholder="name@email.com"/>
+        </span>
+      </div>
+    </div>
+
+    <div class="flex-container align-center">
+      <div class="form-button-container set-width">
+        <input type="submit" value="Subscribe" />
+        <input type="hidden" name="tag" value="Terrabyte Subscribers" />
+      </div>
+      <p class="flex-width">Powered by 
+        <a class="standard-link" href="https://buttondown.email" target="_blank">Buttondown</a>
+      </p>
+    </div>
+  </form>
+
+        </div>
+      </div>
+
+      <div class="max-width">
+        <hr>
+      </div>
+      
+
+      <div class="footer-bottom-container max-width flex-container align-center">
+        <div id="footer-bottom-info-container" class="flex-width">
+          <div id="footer-copyright">
+            &copy; <span id="current-year-text"></span> Terrabyte, LLC. All Rights Reserved.
+          </div>
+          <div id="made-by">
+            <span>Website designed &amp; hosted by <a class="standard-link" href="https://www.goldenharpmedia.com" target="_blank">Golden Harp Media</a></span>
+          </div>
+        </div>
+        
+
+        <div class="set-width footer-badges-container flex-container align-center">
+          <!-- website carbon -->
+          <div class="website-carbon-badge footer-badge">
+            <div id="wcb" class="carbonbadge wcb-d"></div>
+            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+          </div>
+          <!-- clean creatives -->
+          <div class="clean-creatives-badge footer-badge">
+            <a href="https://www.cleancreatives.org" target="_blank">
+              <div id="clean-creatives-img"></div>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
