@@ -1,5 +1,9 @@
 /* styles that are specific to the placeholder site (can be deleted after filling in actual site content) */
 
+body{
+  min-height:100vh;
+}
+
 section{
   min-height:auto;
 }
